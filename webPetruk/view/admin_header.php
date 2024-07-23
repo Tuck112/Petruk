@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3YD856M69"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R3YD856M69');
+</script>
+
   <meta charset="utf-8" />
   <title>PETRUK - Pengaduan Infrastruktur</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -25,6 +36,8 @@
 
   <!-- Template Stylesheet -->
   <link href="../css/style.css" rel="stylesheet" />
+
+  
 </head>
 
 <body>
@@ -50,7 +63,6 @@
             <div class="dropdown-menu bg-light m-0">
               <a href="../view/berita.php" class="dropdown-item">BERITA</a>
               <a href="../view/stat_admin.php" class="dropdown-item">STATISTIK</a>
-              <a href="../view/adminEvent.php" class="dropdown-item">EVENT</a>
               <!-- <a href="manualUser.php" class="dropdown-item">PANDUAN PETRUK</a> -->
               <a href="../view/galeri.php" class="dropdown-item">GALERI</a>
               <!-- <a href="donasi.php" class="dropdown-item">DONASI</a> -->
@@ -62,7 +74,6 @@
             <div class="dropdown-menu bg-light m-0">
               <a href="../view/pengaduan.php" class="dropdown-item">PENGADUAN</a>
               <a href="../view/insert_berita.php" class="dropdown-item">BERITA</a>
-              <a href="../map/leafletdrawingedit" class="dropdown-item">MAP</a>
               <a href="../view/insert_event.php" class="dropdown-item">EVENT</a>
             </div>
           </div>
@@ -72,6 +83,8 @@
               <a href="../view/dataJalan.php" class="dropdown-item">PENGADUAN</a>
               <a href="../view/data_berita.php" class="dropdown-item">BERITA</a>
               <a href="../view/data_event.php" class="dropdown-item">EVENT</a>
+
+
             </div>
           </div>
           <!-- <a href="kontak.php" class="nav-item nav-link">KONTAK KAMI</a> -->

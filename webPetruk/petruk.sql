@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 29 Apr 2024 pada 12.03
--- Versi server: 10.4.28-MariaDB
--- Versi PHP: 8.1.17
+-- Waktu pembuatan: 23 Jun 2024 pada 13.22
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,7 +39,6 @@ CREATE TABLE `berita` (
 --
 
 INSERT INTO `berita` (`id`, `judul`, `isi`, `gambar`) VALUES
-(6, 'ffmwklmw', 'wkmflwk', 'WhatsApp Image 2023-06-19 at 14.49.02.jpeg'),
 (7, 'nfkwjnfkjw', 'enjrnwkrnkwj', 'draineas.jpeg'),
 (8, 'kecelakaaan', 'efnbenfwiubfwiubfwuie', 'Jalan-Rusak-1024x768.jpeg');
 
@@ -122,11 +121,11 @@ CREATE TABLE `pengaduan` (
 --
 
 INSERT INTO `pengaduan` (`id_pengaduan`, `nama`, `email`, `no_telepon`, `id_kategori`, `alamat`, `kondisi`, `gambar`, `status`) VALUES
-(7, 'Test3', 'test1@gmail.com', '09866545543', 5, 'Disana', 'Buruk sekali', 'testmobil.jpeg', ''),
-(8, 'test2', 'test2@gmail.com', '08674556541', 5, 'lampu lalin godean', 'error koyo wargane', 'test2.jpg', ''),
-(25, 'rapip anjay mabar', 'rapipanjaymabar@gmail.com', '314567890', 5, 'Jl. Suryatmaja', 'Copot', 'download.jpg', ''),
-(33, 'Anto', 'antogimang@gmail.com', '08816671232', 4, 'jembatan los dol', 'ini parah ga ya?', 'imgjmbtn.jpg', ''),
-(34, 'PAJRI', 'dtfyg@gmail.com', '1423546547689', 3, 'yfkuglihk', 'Buruk Sekali', 'imgjmbtn.jpg', ''),
+(7, 'Test3', 'test1@gmail.com', '09866545543', 5, 'Disana', 'Buruk sekali', 'testmobil.jpeg', 'selesai'),
+(8, 'test2', 'test2@gmail.com', '08674556541', 5, 'lampu lalin godean', 'error koyo wargane', 'test2.jpg', 'selesai'),
+(25, 'rapip anjay mabar', 'rapipanjaymabar@gmail.com', '314567890', 5, 'Jl. Suryatmaja', 'Copot', 'download.jpg', 'belum'),
+(33, 'Anto', 'antogimang@gmail.com', '08816671232', 4, 'jembatan los dol', 'ini parah ga ya?', 'imgjmbtn.jpg', 'belum'),
+(34, 'PAJRI', 'dtfyg@gmail.com', '1423546547689', 3, 'yfkuglihk', 'Buruk Sekali', 'imgjmbtn.jpg', 'selesai'),
 (35, 'TESTING', 'dtfyg@gmail.com', '4567654', 3, 'werbfe gd', 'eewbf gd', 'lalin2.jpg', ''),
 (37, 'grhtjy', 'pitikenak@gmail.com', '4567654', 3, 'qwfegr', 'aweghm', 'download.jpeg', ''),
 (41, 'efbghj,kgu', 'gadgmg@gmail.com', '12345678', 6, 'sbf', 'dbykky', 'lalin.jpg', ''),
@@ -145,7 +144,8 @@ INSERT INTO `pengaduan` (`id_pengaduan`, `nama`, `email`, `no_telepon`, `id_kate
 (60, 'Janus', 'janus@gmail.com', '0857689651788', 7, 'Jl Wahid Hasyim No.34', 'Tidak ada trotoar', 'wahidhasim.jpg', ''),
 (61, 'Jalan', 'jalanwahidhasyim@gmail.co', '0861768342523', 3, 'Jalan wahid hasyin no 34', 'Bergelombang', 'wahidhasim.jpg', ''),
 (62, 'Ijar', 'ijarjar@gmail.com', '1234567891', 5, 'esdrftyguiuhjk', 'rtfghvbj', 'draineas.jpeg', ''),
-(63, 'izhar', 'radityamurrahman@gmail.co', '087785368448', 3, 'jalan jalan', 'jalan berlubang', 'Jalan-Rusak-1024x768.jpeg', '');
+(63, 'izhar', 'radityamurrahman@gmail.co', '087785368448', 3, 'jalan jalan', 'jalan berlubang', 'Jalan-Rusak-1024x768.jpeg', ''),
+(64, 'naufal', 'muhnaufal1510@students.am', '085239143091', 3, 'uuhfwuififbif', 'niffnuifenuif', 'RAFIF 2_page-0001.jpg', '');
 
 -- --------------------------------------------------------
 
@@ -248,13 +248,13 @@ ALTER TABLE `kategori_pengaduan`
 -- AUTO_INCREMENT untuk tabel `pengaduan`
 --
 ALTER TABLE `pengaduan`
-  MODIFY `id_pengaduan` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
+  MODIFY `id_pengaduan` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT untuk tabel `usertable`
 --
 ALTER TABLE `usertable`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

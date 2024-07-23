@@ -60,6 +60,8 @@ require_once 'user_header.php';
             title: '<?php echo $sweetAlert['title']; ?>',
             text: '<?php echo $sweetAlert['text']; ?>',
             icon: '<?php echo $sweetAlert['type']; ?>',
+
+            
         });
     </script>
 <?php } ?>

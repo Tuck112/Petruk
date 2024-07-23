@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R3YD856M69"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R3YD856M69');
+</script>
   <meta charset="utf-8" />
   <title>PETRUK - Pengaduan Infrastruktur</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -57,10 +67,9 @@
             <div class="dropdown-menu bg-light m-0">
               <a href="../view/userBerita.php" class="dropdown-item">BERITA</a>
               <a href="../view/stat.php" class="dropdown-item">STATISTIK</a>
-              <a href="../map/leafletdrawinghasil" class="dropdown-item">MAP</a>
-              <a href="../view/event.php" class="dropdown-item">EVENT</a>
-              <a href="../view/testimoni.php" class="dropdown-item">TESTIMONI</a>
               <a href="../view/manualUser.php" class="dropdown-item">PANDUAN PETRUK</a>
+              <a href="../view/event.php" class="dropdown-item">EVENT</a>
+              <a href="../view/map.php" class="dropdown-item">MAP</a>
             </div>
           </div>
           <a href="userPengaduan.php" class="nav-item nav-link">PENGADUAN</a>

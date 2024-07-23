@@ -41,7 +41,7 @@ include_once '../functions/db.php';
             <form method="POST" enctype="multipart/form-data" action="../controller/tambah_event.php">
                 <div class="col">
                     <div class="card-header text-center bg-dark">
-                        <h2 class="text-light">Berita</h2>
+                        <h2 class="text-light">EVENT</h2>
                     </div>
                     <div class="card-body">
                         <div class="my-3">

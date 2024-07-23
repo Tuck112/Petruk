@@ -3,13 +3,13 @@
 require_once '../functions/db.php';
 
 
-$get1 = mysqli_query($conn,"select * from pengaduan where status= ' selesai ' ");
+$get1 = mysqli_query($conn,"select * from pengaduan where status='selesai'");
 $count1 = mysqli_num_rows($get1);
 
-$get2 = mysqli_query($conn,"select * from pengaduan where status= ' belum' ");
+$get2 = mysqli_query($conn,"select * from pengaduan where status='belum'");
 $count2 = mysqli_num_rows($get2);
 
-$get3 = mysqli_query($conn,"select * from pengaduan where status= ' proses perbaikan '");
+$get3 = mysqli_query($conn,"select * from pengaduan where status='proses perbaikan'");
 $count3 = mysqli_num_rows($get3);
 ?>
 
@@ -61,6 +61,9 @@ $count3 = mysqli_num_rows($get3);
   </head>
 
   <body>
+
+
+  
  <!-- Navbar Start -->
  <?php
   require_once 'user_header.php';
@@ -70,7 +73,7 @@ $count3 = mysqli_num_rows($get3);
     <div class="container">
   <div class="row">
     <div class="col">
-      <span class="badge bg-success ml-4 mt-5"><?=$count1;?></span> SUDAH DI PERBAIKI
+      <span class="badge bg-success ml-4 mt-5"><?=$count1?></span> SUDAH DI PERBAIKI
     </div>
     </div>
 
@@ -126,6 +129,7 @@ $(document).ready(function () {
     
 });
     </script>
+
 
 
   </body>
